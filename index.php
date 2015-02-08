@@ -12,7 +12,9 @@
 <body>
 
   <div class="container">
-    <h1>Coming Soon</h1>
+    <div class="center">
+      <h1>Coming Soon</h1>
+    </div>
   </div>
   
 <?php wp_footer(); ?>
