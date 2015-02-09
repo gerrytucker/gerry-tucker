@@ -11,7 +11,24 @@
 </head>
 <body>
 
-  <h1>Coming Soon</h1>
+  <nav>
+    <ul class="primary-nav">
+    </ul>
+  </nav>
+  
+  <main class="content">
+    <h1>Coming Soon</h1>
+  </main>
+  
+  <div class="overlay-nav">
+    <span></span>
+  </div>
+  
+  <div class="overlay-content">
+    <span></span>
+  </div>
+  
+  <a href="#0" class="nav-trigger">Menu<span class="icon"></span></a>
   
 <?php wp_footer(); ?>
 </body>
