@@ -90,11 +90,11 @@ function allow_email_address_login( $username ) {
 }
 
 // Add my contact details to toolbar
-add_action( 'wp_before_admin_bar_render', 'add_my_contact_details' );
+add_action( 'admin_bar_menu', 'add_my_contact_details', 100 );
 function add_my_contact_details() {
 	
 	global $wp_admin_bar;
-	$wp_admin_bar->add_node(
+	$wp_admin_bar->add_menu(
 		array(
 			'id' => 'contact-designer',
 			'title' => 'Contact Designer',
@@ -113,29 +113,3 @@ function set_ie_edge() {
 	
 }
 
-
-/**
- * Restaurant custom post type & taxonomies
- */
-register_post_type('dishes', array(
-  'label' => __('Dishes'),
-  'singular_label' => __('Dish'),
-  'public' => true,
-  'show_ui' => true,
-  'capability_type' => 'post',
-  'hierarchical' => false,
-  'query_var' => false,
-  'supports' => array(
-    'title',
-    'editor',
-    'excerpt',
-    'thumbnail',
-    'author',
-    'page-attributes'
-  )
-));
-
-register_taxonomy('dish_types', 'dishes', array(
-  'label' => __('Dish Type'),
-  'hierarchical' => true
-));
