@@ -11,11 +11,7 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="center">
-      <h1>Coming Soon</h1>
-    </div>
-  </div>
+  <h1>Coming Soon</h1>
   
 <?php wp_footer(); ?>
 </body>
